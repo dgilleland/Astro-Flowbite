@@ -33,7 +33,11 @@ import Card from '../components/Card.astro';
 				</linearGradient>
 			</defs>
 		</svg>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
+		<h1>Welcome to <button data-tooltip-target="tooltip-title" type="button" class="text-gradient">Astro</button></h1>
+		<div id="tooltip-title" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-3 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+		  with Flowbite
+		  <div class="tooltip-arrow" data-popper-arrow></div>
+		</div>
 		<p class="instructions">
 			To get started, open the directory <code>src/pages</code> in your project.<br />
 			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
