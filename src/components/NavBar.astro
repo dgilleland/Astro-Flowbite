@@ -1,0 +1,7 @@
+---
+const pages = await Astro.glob('../pages/**/*');
+---
+<h1>NavBar</h1>
+<ul>
+    {pages.map(p => <p>{p.url}</p>)}
+</ul>
